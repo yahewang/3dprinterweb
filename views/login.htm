@@ -1,0 +1,22 @@
+<% include common/header.htm %>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div class="container ">
+  <div style="width: 400px; height: 300px; background-color: #CCC; z-index: 1">
+    <h1><%= title %></h1>
+    <form method="post" novalidate class="css-form">
+        用户名:<input type="text" value="" name="name" /><br />
+        密码: <input type="password" value="" name="password" /><br />     
+<input type="submit" value="登录"> 
+</form>
+</div>
+</div>
+  </body>
+</html>

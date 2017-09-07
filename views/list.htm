@@ -1,0 +1,31 @@
+<% include common/header.htm %>
+<head>
+  
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     
+  </head>
+ 
+<body>
+
+<div class="container " style="position:relative;">
+
+</table>
+<div style="width:400px;">
+<div class="list-group">
+<% list.forEach(function( list ){ %>
+  <a href="/view/<%= list._id %>" class="list-group-item active">
+     <%= list.title %>
+  </a>
+  <div class="panel panel-primary" ><%=list.content%> <a href="/list/<%=list._id%>/editor">修改</a></div>
+  <% }); %>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
+
+
+
+
+

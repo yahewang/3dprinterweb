@@ -1,0 +1,37 @@
+<% include common/header.htm %>
+<!doctype html>
+<html>
+    <head>
+  
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     
+  </head>
+<body>
+<div class="container">
+<div style="width: 400px; height: 300px; background-color: #CCC; z-index: 1">
+    <h1><%= title %></h1>
+<form method="post" novalidate class="css-form">
+用户名:<input type="text" placeholder="Pick a username" value="" name="name" /><br />
+密码: <input type="password" value="" name="password" /><br />
+电子邮箱:<input type="email" value="" name="email" /><br />
+电话:<input type="text" value="" name="phone" /><br />
+性别:<input type="radio" value="male" name="gender" />男
+<input type="radio" value="female" name="gender" />女<br />
+选择一个头像上传: <br />
+
+<input type="file" name="image" size="40" />
+<br />
+
+<input type="submit" value="注册">
+
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,34 @@
+<% include common/header.htm %>
+<!doctype html>
+<html>
+    <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     
+  </head>
+<body>
+<div class="container">
+<div style="width: 400px; height: 300px; background-color: #CCC; z-index: 1">
+    <h1><%= title %></h1>
+<form method="post" novalidate class="css-form">
+项目名称:<input type="text" value="" name="name" /><br />
+申请单位:<input type="text" value="" name="company" /><br />
+用途:<input type="text" value="" name="goal" /><br />
+联系方式：<br />
+电子邮箱: <input type="email" value="" name="email" /><br />
+电话: <input type="text" value="" name="phone" /><br />
+
+选择附件: <br />
+
+<input type="file" name="image" size="50" />
+<br />
+
+<input type="submit" value="提交">
+
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
